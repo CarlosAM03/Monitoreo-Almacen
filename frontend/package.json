@@ -1,0 +1,22 @@
+{
+  "name": "frontend_monitor_industrial_interface",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vite.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "vite": "^8.0.10"
+  }
+}

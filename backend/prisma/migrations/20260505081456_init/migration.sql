@@ -1,0 +1,14 @@
+-- CreateTable
+CREATE TABLE "SensorLog" (
+    "id" SERIAL NOT NULL,
+    "temp" DOUBLE PRECISION NOT NULL,
+    "hum" DOUBLE PRECISION NOT NULL,
+    "gas" DOUBLE PRECISION NOT NULL,
+    "flame" INTEGER NOT NULL,
+    "mov" INTEGER NOT NULL,
+    "dist" DOUBLE PRECISION NOT NULL,
+    "source" TEXT NOT NULL,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "SensorLog_pkey" PRIMARY KEY ("id")
+);
