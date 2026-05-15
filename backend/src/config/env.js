@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 module.exports = {
-  PORT: process.env.PORT || 3000,
+  PORT: process.env.PORT || 3001,
   MODE: process.env.MODE || "SIMULATION",
-  SERIAL_PORT: process.env.SERIAL_PORT || "COM3"
+  SERIAL_PORT: process.env.SERIAL_PORT || "COM5"
 };
