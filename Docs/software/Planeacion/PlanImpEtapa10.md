@@ -492,7 +492,7 @@ Mantener selector solo como:
 
 ## WIFI
 
-* oculto temporalmente
+* bloqueado temporalmente
 
 ---
 

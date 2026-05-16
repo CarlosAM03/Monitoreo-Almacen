@@ -1,0 +1,180 @@
+.alerts-panel {
+
+  margin-top: 1.5rem;
+
+  padding: 1.5rem;
+
+  border-radius: 24px;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  background:
+    rgba(15,20,30,0.92);
+
+  box-shadow:
+    0 10px 28px rgba(0,0,0,0.25);
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.alerts-panel-normal {
+
+  border-color:
+    rgba(76,255,136,0.15);
+}
+
+.alerts-panel-active {
+
+  border-color:
+    rgba(255,70,70,0.28);
+
+  box-shadow:
+    0 0 30px rgba(255,0,0,0.14);
+}
+
+.alerts-panel-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 1rem;
+
+  gap: 1rem;
+}
+
+.alerts-panel-title {
+
+  margin: 0;
+
+  font-size: 1.1rem;
+}
+
+.alerts-panel-badge {
+
+  padding:
+    0.45rem 0.85rem;
+
+  border-radius: 999px;
+
+  font-size: 0.72rem;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.alerts-panel-badge.ok {
+
+  background:
+    rgba(76,255,136,0.12);
+
+  color: #4cff88;
+}
+
+.alerts-panel-badge.danger {
+
+  background:
+    rgba(255,70,70,0.12);
+
+  color: #ff6666;
+}
+
+.alerts-empty {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  color:
+    rgba(255,255,255,0.72);
+}
+
+.alerts-empty-icon {
+
+  font-size: 1.4rem;
+}
+
+.alerts-list {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.8rem;
+}
+
+.alert-item {
+
+  border-radius: 16px;
+
+  padding: 1rem;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  background:
+    rgba(255,255,255,0.03);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.alert-item:hover {
+
+  transform: translateX(4px);
+}
+
+.alert-item-critical {
+
+  border-color:
+    rgba(255,70,70,0.35);
+
+  background:
+    rgba(255,70,70,0.08);
+}
+
+.alert-item-warning {
+
+  border-color:
+    rgba(255,193,7,0.28);
+
+  background:
+    rgba(255,193,7,0.08);
+}
+
+.alert-item-low {
+
+  border-color:
+    rgba(80,150,255,0.28);
+
+  background:
+    rgba(80,150,255,0.08);
+}
+
+.alert-item-content {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.8rem;
+}
+
+.alert-item-icon {
+
+  font-size: 1.2rem;
+}
+
+.alert-item-text {
+
+  font-weight: 500;
+}

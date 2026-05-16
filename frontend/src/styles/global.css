@@ -1,0 +1,175 @@
+:root {
+
+  --bg-primary: #0b1018;
+  --bg-secondary: #111827;
+  --bg-panel: rgba(18, 22, 30, 0.92);
+
+  --border-primary:
+    rgba(255,255,255,0.08);
+
+  --text-primary: #ffffff;
+  --text-secondary:
+    rgba(255,255,255,0.72);
+
+  --success: #4cff88;
+  --warning: #ffd54a;
+  --danger: #ff6666;
+
+  --shadow-soft:
+    0 10px 30px rgba(0,0,0,0.28);
+
+  --radius-lg: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 1.5vh;
+  min-height: 100%;
+}
+
+body {
+
+  font-family:
+    "Segoe UI",
+    sans-serif;
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(25,40,70,0.35),
+      transparent 45%
+    ),
+    linear-gradient(
+      180deg,
+      #0b1018,
+      #111827,
+      #0f1724
+    );
+
+  color: var(--text-primary);
+}
+
+.app-shell {
+
+  position: relative;
+
+  min-height: 100vh;
+
+  padding: 2rem;
+
+  overflow: hidden;
+}
+
+.app-shell-alert::before {
+
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255,0,0,0.08),
+      transparent 60%
+    );
+
+  pointer-events: none;
+}
+
+.app-background-grid {
+
+  position: fixed;
+
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.03) 1px,
+      transparent 1px
+    );
+
+  background-size: 40px 40px;
+
+  pointer-events: none;
+
+  opacity: 0.2;
+}
+
+.app-header {
+
+  position: relative;
+
+  z-index: 2;
+
+  margin-bottom: 2rem;
+
+  padding: 1.5rem;
+
+  border-radius: 24px;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  background:
+    rgba(10,15,25,0.78);
+
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
+}
+
+.app-tag {
+
+  display: inline-flex;
+
+  padding: 0.35rem 0.8rem;
+
+  border-radius: 999px;
+
+  background:
+    rgba(76,255,136,0.12);
+
+  border:
+    1px solid rgba(76,255,136,0.22);
+
+  color: var(--success);
+
+  font-size: 0.rem;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.app-title {
+
+  margin-top: 1rem;
+  margin-bottom: 0;
+
+  font-size: clamp(
+    2rem,
+    4vw,
+    3rem
+  );
+  
+}
+
+.app-header-alert {
+
+  border-color:
+    rgba(255,70,70,0.28);
+
+  box-shadow:
+    0 0 28px rgba(255,0,0,0.12);
+}

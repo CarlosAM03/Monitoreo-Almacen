@@ -235,7 +235,7 @@ Selector visual del provider activo:
 
 * SERIAL
 * SIMULATION
-* WIFI (planeado)
+* WIFI (bloqueado para integracion futura)
 
 ---
 

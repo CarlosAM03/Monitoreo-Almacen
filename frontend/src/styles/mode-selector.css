@@ -1,0 +1,144 @@
+.mode-selector {
+
+  margin-bottom: 2rem;
+
+  padding: 1.5rem;
+
+  border-radius: 24px;
+
+  background:
+    rgba(15,20,30,0.92);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 10px 28px rgba(0,0,0,0.25);
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.mode-selector-alert {
+
+  border-color:
+    rgba(255,70,70,0.28);
+
+  box-shadow:
+    0 0 28px rgba(255,0,0,0.12);
+}
+
+.mode-selector-header {
+
+  margin-bottom: 1.2rem;
+}
+
+.mode-selector-title {
+
+  margin: 0;
+
+  font-size: 1.1rem;
+}
+
+.mode-selector-subtitle {
+
+  color:
+    rgba(255,255,255,0.65);
+
+  font-size: 0.9rem;
+}
+
+.mode-selector-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(180px,1fr));
+
+  gap: 1rem;
+}
+
+.mode-chip {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.45rem;
+
+  padding: 1rem;
+
+  border-radius: 18px;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  background:
+    rgba(255,255,255,0.03);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.mode-chip:hover {
+
+  transform: translateY(-2px);
+}
+
+.mode-chip-label {
+
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+}
+
+.mode-chip-description {
+
+  font-size: 0.85rem;
+
+  color:
+    rgba(255,255,255,0.65);
+}
+
+.mode-chip.active {
+
+  border-color:
+    rgba(80,150,255,0.35);
+
+  background:
+    rgba(80,150,255,0.12);
+
+  box-shadow:
+    0 0 22px rgba(80,150,255,0.18);
+}
+
+.mode-serial.active {
+
+  border-color:
+    rgba(13, 189, 72, 0.406);
+
+  background:
+    rgba(76,255,136,0.12);
+}
+
+.mode-simulation.active {
+
+  border-color:
+    rgba(255,193,7,0.35);
+
+  background:
+    rgba(255,193,7,0.12);
+}
+
+.mode-disabled {
+
+  opacity: 0.45;
+
+  cursor: not-allowed;
+}

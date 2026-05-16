@@ -1,0 +1,123 @@
+.status-card {
+
+  padding: 1rem;
+
+  border-radius: 18px;
+
+  background:
+    rgba(15,20,30,0.92);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.status-card:hover {
+
+  transform: translateY(-2px);
+}
+
+.status-card-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.status-card-info {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.7rem;
+}
+
+.status-card-icon {
+
+  font-size: 1.1rem;
+}
+
+.status-card-label {
+
+  font-weight: 600;
+}
+
+.status-card-state {
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.status-card-bar {
+
+  margin-top: 1rem;
+
+  height: 5px;
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,0.08);
+}
+
+.status-card-normal {
+
+  border-color:
+    rgba(76,255,136,0.18);
+}
+
+.status-card-normal
+.status-card-bar {
+
+  background: #4cff88;
+}
+
+.status-card-critical {
+
+  border-color:
+    rgba(255,70,70,0.35);
+
+  box-shadow:
+    0 0 24px rgba(255,0,0,0.18);
+}
+
+.status-card-critical
+.status-card-bar {
+
+  background: #ff6666;
+}
+
+.status-card-warning {
+
+  border-color:
+    rgba(255,193,7,0.28);
+}
+
+.status-card-warning
+.status-card-bar {
+
+  background: #ffd54a;
+}
+
+.status-card-low {
+
+  border-color:
+    rgba(80,150,255,0.28);
+}
+
+.status-card-low
+.status-card-bar {
+
+  background: #66b3ff;
+}

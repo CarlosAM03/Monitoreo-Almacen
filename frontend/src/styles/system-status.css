@@ -1,0 +1,96 @@
+.system-status {
+
+  margin: 1.5rem 0;
+
+  padding: 1.5rem;
+
+  border-radius: 18px;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.system-status-normal {
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(15,60,35,0.95),
+      rgba(10,35,20,0.95)
+    );
+
+  border-color:
+    rgba(76,255,136,0.22);
+}
+
+.system-status-alert {
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(90,10,10,0.96),
+      rgba(45,0,0,0.95)
+    );
+
+  border-color:
+    rgba(255,70,70,0.35);
+
+  box-shadow:
+    0 0 32px rgba(255,0,0,0.22);
+
+  animation:
+    systemAlertPulse 1.8s infinite;
+}
+
+.system-status-content {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.system-status-indicator {
+
+  width: 16px;
+
+  height: 16px;
+
+  border-radius: 50%;
+}
+
+.system-status-normal
+.system-status-indicator {
+
+  background: #4cff88;
+}
+
+.system-status-alert
+.system-status-indicator {
+
+  background: #ff6666;
+}
+
+@keyframes systemAlertPulse {
+
+  0% {
+    box-shadow:
+      0 0 18px rgba(255,0,0,0.15);
+  }
+
+  50% {
+    box-shadow:
+      0 0 38px rgba(255,0,0,0.32);
+  }
+
+  100% {
+    box-shadow:
+      0 0 18px rgba(255,0,0,0.15);
+  }
+}
