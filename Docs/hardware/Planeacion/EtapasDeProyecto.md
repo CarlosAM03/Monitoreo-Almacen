@@ -122,6 +122,6 @@ El ESP-01 NO será utilizado inicialmente.
 | flama                  | ✅                 |
 | LDR analógico          | ✅                 |
 | servo                  | ✅                 |
-| firmware modular       | ✅
-| backend                | ⏳ pendiente       |
-| frontend               | ⏳ pendiente       |
+| firmware modular       | ✅                 |
+| backend                | ✅                 |
+| frontend               | ✅                 |
