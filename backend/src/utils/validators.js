@@ -7,8 +7,7 @@ function isValidMode(mode) {
 function isSensorDataValid(data) {
   return (
     typeof data.temp === "number" &&
-    typeof data.hum === "number" &&
-    typeof data.gas === "number"
+    typeof data.hum === "number" 
   );
 }
 

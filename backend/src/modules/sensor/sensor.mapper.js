@@ -1,11 +1,52 @@
+function normalizeNumber(value) {
+
+  const parsed = Number(value);
+
+  return Number.isNaN(parsed)
+    ? 0
+    : parsed;
+}
+
 function mapSensorData(raw) {
+
   return {
-    temp: Number(raw.temp) || 0,
-    hum: Number(raw.hum) || 0,
-    gas: Number(raw.gas) || 0,
-    flame: Number(raw.flame) || 0,
-    mov: Number(raw.mov) || 0,
-    dist: Number(raw.dist) || 0,
+
+    // =========================
+    // SENSORES
+    // =========================
+
+    temp: normalizeNumber(raw.temp),
+
+    hum: normalizeNumber(raw.hum),
+
+    dist: normalizeNumber(raw.dist),
+
+    flame: normalizeNumber(raw.flame),
+
+    light: normalizeNumber(raw.light),
+
+
+    // =========================
+    // ALERTAS
+    // =========================
+
+    fire: normalizeNumber(raw.fire),
+
+    intrusion: normalizeNumber(raw.intrusion),
+
+    temp_alert: normalizeNumber(raw.temp_alert),
+
+    high_hum: normalizeNumber(raw.high_hum),
+
+    low_light: normalizeNumber(raw.low_light),
+
+    any_alert: normalizeNumber(raw.any_alert),
+
+
+    // =========================
+    // METADATA
+    // =========================
+
     source: raw.source || "unknown"
   };
 }

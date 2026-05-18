@@ -1,0 +1,112 @@
+.connection-status {
+
+  margin-top: 2rem;
+
+  padding: 1.5rem;
+
+  border-radius: 22px;
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  background:
+    rgba(15,20,30,0.92);
+
+  box-shadow:
+    0 10px 24px rgba(0,0,0,0.25);
+}
+
+.connection-status-content {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.connection-status-info {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.connection-status-title {
+
+  margin: 0;
+
+  font-size: 1rem;
+}
+
+.connection-status-message {
+
+  margin-top: 0.35rem;
+  margin-bottom: 0;
+
+  color:
+    rgba(255,255,255,0.7);
+}
+
+.connection-status-badge {
+
+  padding:
+    0.5rem 0.9rem;
+
+  border-radius: 999px;
+
+  font-size: 0.72rem;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+.connection-online {
+
+  border-color:
+    rgba(76,255,136,0.22);
+}
+
+.connection-online
+.connection-status-badge {
+
+  background:
+    rgba(76,255,136,0.12);
+
+  color: #4cff88;
+}
+
+.connection-offline {
+
+  border-color:
+    rgba(255,70,70,0.22);
+}
+
+.connection-offline
+.connection-status-badge {
+
+  background:
+    rgba(255,70,70,0.12);
+
+  color: #ff6666;
+}
+
+.connection-reconnecting {
+
+  border-color:
+    rgba(255,193,7,0.22);
+}
+
+.connection-reconnecting
+.connection-status-badge {
+
+  background:
+    rgba(255,193,7,0.12);
+
+  color: #ffd54a;
+}

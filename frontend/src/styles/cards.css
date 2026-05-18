@@ -1,0 +1,136 @@
+.sensor-card {
+
+  padding: 1.5rem;
+
+  border-radius: 20px;
+
+  background:
+    rgba(15,20,30,0.94);
+
+  border:
+    1px solid rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 10px 24px rgba(0,0,0,0.22);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.sensor-card:hover {
+
+  transform: translateY(-3px);
+}
+
+.sensor-card-normal {
+
+  border-color:
+    rgba(76,255,136,0.12);
+}
+
+.sensor-card-alert {
+
+  border-color:
+    rgba(255,70,70,0.35);
+
+  box-shadow:
+    0 0 24px rgba(255,0,0,0.18);
+}
+
+.sensor-card-global-alert {
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(30,12,12,0.96),
+      rgba(18,20,28,0.96)
+    );
+}
+
+.sensor-card-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.sensor-card-title-group {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.8rem;
+}
+
+.sensor-card-icon {
+
+  font-size: 1.3rem;
+}
+
+.sensor-card-title {
+
+  margin: 0;
+
+  font-size: 1rem;
+}
+
+.sensor-card-value {
+
+  margin-top: 2rem;
+  margin-bottom: 0;
+
+  font-size: clamp(
+    2rem,
+    5vw,
+    3rem
+  );
+
+  font-weight: 700;
+}
+
+.sensor-card-unit {
+
+  margin-left: 0.4rem;
+
+  font-size: 1rem;
+
+  color:
+    rgba(255,255,255,0.65);
+}
+
+.sensor-card-status {
+
+  padding:
+    0.35rem 0.7rem;
+
+  border-radius: 999px;
+
+  font-size: 0.7rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+}
+
+.sensor-card-status.normal {
+
+  background:
+    rgba(76,255,136,0.12);
+
+  color: #4cff88;
+}
+
+.sensor-card-status.danger {
+
+  background:
+    rgba(255,70,70,0.12);
+
+  color: #ff6666;
+}

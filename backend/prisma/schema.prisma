@@ -8,13 +8,46 @@ datasource db {
 }
 
 model SensorLog {
-  id        Int      @id @default(autoincrement())
-  temp      Float
-  hum       Float
-  gas       Float
-  flame     Int
-  mov       Int
-  dist      Float
-  source    String
+
+  id Int @id @default(autoincrement())
+
+  // =========================
+  // SENSORES
+  // =========================
+
+  temp Float
+
+  hum Float
+
+  dist Float
+
+  flame Int
+
+  light Int
+
+
+  // =========================
+  // ALERTAS
+  // =========================
+
+  fire Int
+
+  intrusion Int
+
+  temp_alert Int
+
+  high_hum Int
+
+  low_light Int
+
+  any_alert Int
+
+
+  // =========================
+  // METADATA
+  // =========================
+
+  source String
+
   createdAt DateTime @default(now())
 }

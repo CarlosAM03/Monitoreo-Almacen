@@ -13,7 +13,7 @@ function start(callback) {
   parser.on("data", (line) => {
     try {
       const data = parse(line);
-      data.source = "serial";
+      data.source = "SERIAL";
       callback(data);
     } catch (err) {
       console.log("Error parseando:", line);
