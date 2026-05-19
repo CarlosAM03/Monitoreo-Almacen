@@ -926,7 +926,7 @@ El backend interpreta esta salida serial y la transforma en eventos WebSocket pa
 
 ---
 
-## ⏳ ETAPA 9 — Backend Node.js
+## ✅ ETAPA 9 — Backend Node.js
 
 * lectura serial
 * JSON
@@ -934,7 +934,7 @@ El backend interpreta esta salida serial y la transforma en eventos WebSocket pa
 
 ---
 
-## ⏳ ETAPA 10 — Frontend React
+## ✅ ETAPA 10 — Frontend React
 
 * dashboard
 * cards
@@ -977,4 +977,4 @@ El ESP-01 NO será utilizado inicialmente.
 | Comunicación serial estructurada | ✅ IMPLEMENTADA |
 | Backend Node.js                  | ✅ PREPARADO    |
 | Frontend React                   | ✅ PREPARADO    |
-| Integración web                  | ⏳ ETAPA 9      |
+| Integración web                  | ✅ IMPLEMENTADA     |

@@ -72,7 +72,7 @@
 
 ---
 
-## ⏳ ETAPA 9 — Backend Node.js
+## ✅ ETAPA 9 — Backend Node.js
 
 * lectura serial
 * JSON
@@ -80,7 +80,7 @@
 
 ---
 
-## ⏳ ETAPA 10 — Frontend React
+## ✅ ETAPA 10 — Frontend React
 
 * dashboard
 * cards
