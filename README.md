@@ -510,7 +510,7 @@ Docs/
 
 ## Backend
 
-* LISTO PARA INTEGRACIÓN CON HARDWARE REAL
+* INTEGRACIÓN CON HARDWARE REAL ACTIVA
 
 ---
 
@@ -520,18 +520,16 @@ Docs/
 
 ---
 
-# 📌 Próxima etapa
+ETAPA 9 — Integración completa backend + frontend + hardware
 
-## ETAPA 9 — Integración completa backend + frontend + hardware
-
-Objetivos:
+Consolidado:
 
 * Conexión serial real con Arduino
 * Parseo final del protocolo serial
 * Emisión Socket.IO
 * Dashboard en tiempo real
 * Persistencia opcional de lecturas
-* Historial de alertas
+* Historial de alertas persistido en DB PostgreSQL mediante Prisma ORM 
 
 ---
 
