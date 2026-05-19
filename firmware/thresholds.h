@@ -17,7 +17,7 @@
 // DISTANCIA
 // =========================
 
-#define DISTANCE_ALERT_THRESHOLD    20
+#define DISTANCE_ALERT_THRESHOLD    10
 
 // =========================
 // ILUMINACIÓN
